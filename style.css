@@ -1,0 +1,484 @@
+@font-face {
+    font-family: "Horror";
+    src: url(./True\ Lies.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #133FBC;
+}
+
+
+/* -----------------page-------------- */
+
+#page
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #133FBC;
+    position: relative;
+}
+#page #nav
+{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#page #nav img
+{
+    height: 100%;
+}
+#page #nav #links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#page #nav #links a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#page #nav p
+{
+    font-size: 13px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#page>img
+{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    z-index: 999;
+}
+#page h1
+{
+    color: #96FFCA;
+    font-size: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* -----------------page1-------------- */
+
+#page1
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #133FBC;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page1 h6
+{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+#page1 h1
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#page1 h6:nth-child(1)::after
+{
+    content: "";
+    position: absolute;
+    bottom: -140%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #96FFCA;
+    transform: translate(-50%,-50%) skewY(-16deg);
+}
+
+
+/* -----------------page2-------------- */
+
+#page2
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #133FBC;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    overflow: hidden;
+}
+#page2 img
+{
+    height: 80%;
+    /* background-color: gray; */
+}
+#page2 #im1
+{
+    margin-top: 15%;
+}
+#page2 #im2
+{
+    margin-top: -15%;
+}
+#page2 .container
+{
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+    height: 0vw;
+    width: 13vw;
+    transform: translate(-50%,-50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    color: white;
+    /* padding: 5vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#page2 #container1
+{
+    left: 24%;
+    top: 70%;
+}
+#page2 #container2
+{
+    right: 11%;
+    top: 37%;
+}
+#page2 #infos
+{
+    width: 25vw;
+    height: 9vw;
+    position: absolute;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#page2 h6
+{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    position: relative;
+    z-index: 9999;
+}
+#page2 h6:nth-child(1)::after
+{
+    z-index: 9999;
+    content: "";
+    position: absolute;
+    bottom: -140%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #96FFCA;
+    transform: translate(-50%,-50%) skewY(-16deg);
+}
+#page2 h1
+{
+    z-index: 9999;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+/* -----------------page3-------------- */
+
+#page3
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #E7EEED;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    overflow: hidden;
+}
+#page3 #p3left
+{
+    height: 100%;
+    width: 32%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#page3 #p3left h6
+{
+    font-family: 'Roboto', sans-serif;
+    color: #133FBC;
+    font-size: 13px;
+    font-weight: 600;
+}
+#page3 #p3left h1
+{
+    color: #133FBC;
+    font-size: 7vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /* background-color: red; */
+    line-height: 90px;
+    margin-bottom: 25px;
+}
+#page3 #p3left h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+#page3 #p3left p
+{
+    color: rgb(35, 35, 35);
+    font-size: 14px;
+    line-height: 23px;
+}
+#page3 #p3left i
+{
+    font-size: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+    margin-right: 13px;
+}
+#page3 #p3left i:hover
+{
+    cursor: pointer;
+    color: #133FBC;
+}
+#page3 #p3right
+{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(99, 213, 160); */
+    display: flex;
+    align-items: center;
+}
+#page3 #p3right>img
+{
+    height: 75%;
+    /* background-color: red; */
+
+}
+#page3 #p3right #imagecontainer
+{
+    width: 50%;
+    height: 75%;
+    /* background-color: yellow; */
+}
+#page3 #p3right #imagecontainer img
+{
+    height: calc(100%/3);
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* -----------------page3-------------- */
+
+#page4
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #E7EEED;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    overflow: hidden;
+}
+#page4 #p4left
+{
+    height: 100%;
+    width: 32%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#page4 #p4left h6
+{
+    font-family: 'Roboto', sans-serif;
+    color: #133FBC;
+    font-size: 13px;
+    font-weight: 600;
+}
+#page4 #p4left h1
+{
+    color: #133FBC;
+    font-size: 7vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /* background-color: red; */
+    line-height: 90px;
+    margin-bottom: 25px;
+}
+#page4 #p4left h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+#page4 #p4left p
+{
+    color: rgb(35, 35, 35);
+    font-size: 14px;
+    line-height: 23px;
+}
+#page4 #p4left i
+{
+    font-size: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+    margin-right: 13px;
+}
+#page4 #p4left i:hover
+{
+    cursor: pointer;
+    color: #133FBC;
+}
+#page4 #p4right
+{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(99, 213, 160); */
+    display: flex;
+    align-items: center;
+}
+#page4 #p4right>img
+{
+    height: 80%;
+    /* background-color: red; */
+
+}
+#page4 #p4right #imagecontainer
+{
+    width: 50%;
+    height: 75%;
+    /* background-color: yellow; */
+}
+#page4 #p4right #imagecontainer img
+{
+    height: calc(100%/3);
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* -----------------page5-------------- */
+
+#page5
+{
+    width: 100%;
+    height: 70vh;
+    /* background-color: #E7EEED; */
+    background-color: #F1F5F5;
+    position: relative;
+    overflow: hidden;
+}
+#page5 #content
+{
+    width: 100%;
+    height: 88%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page5 #content h1
+{
+    margin-top: 140px;
+    font-family: "Horror";
+    color: white;
+    /* background-color: rebeccapurple; */
+    font-size: 9.5vw;
+    rotate: -17deg;
+}
+#page5 #footer
+{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5 #footer i
+{
+    font-size: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+    margin-right: 13px;
+}
+#page5 #footer i:hover
+{
+    cursor: pointer;
+    color: #133FBC;
+}
+#page5>img
+{
+    z-index: 999;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+}
